@@ -84,8 +84,6 @@ RUN curl -L https://www.abisource.com/downloads/abiword/${ABIWORD_VERSION}/sourc
 RUN cd abiword-${ABIWORD_VERSION} && ./configure --prefix=${ABIPREFIX} --disable-default-plugins --disable-print --disable-spell --with-gtk2 && \
     make && make install
 
-RUN ls /opt/abiword
-RUN find / -name libpangoft2-1.0.so.0
 ARG DIST=/opt/build
 RUN mkdir -p ${DIST}/lib && mkdir -p ${DIST}/bin && \
     cp ${ABIPREFIX}/bin/abiword ${DIST}/bin/ && \
