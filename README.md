@@ -8,7 +8,6 @@ For now it has only been tested for conversion from _doc_ and _docx_ to _PDF_ fo
 
 ## Build and deploy
 
-After Dockerfile build
 
 ```
 # Build layer
