@@ -3,7 +3,7 @@
 set -e
 
 rm -rf layer
-docker build -t abiword -f DockerfileAbi .
+docker build -t abiword -f Abi.Dockerfile .
 CONTAINER=$(docker run -d abiword false)
 docker cp $CONTAINER:/opt/build layer
 docker rm $CONTAINER
