@@ -1,0 +1,11 @@
+service: abiwordLayer
+
+provider:
+  name: aws
+  stage: dev
+  runtime: python3.6
+  region: eu-west-1
+
+layers:
+  abiword:
+    path: layer
